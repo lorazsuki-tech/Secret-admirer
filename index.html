@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Secret for Rev ♡</title>
+<style>
+  :root { --pink:#f7a9c4; --deep:#c75d88; --soft:#fff0f5; --ink:#71465a; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; min-height:100vh; color:var(--ink);
+    font-family: "Trebuchet MS", system-ui, sans-serif;
+    background: radial-gradient(circle at 15% 15%, #fff 0 2px, transparent 3px),
+                linear-gradient(145deg,#fff5f8,#ffe2ed 55%,#fff7fa);
+    background-size:42px 42px, auto;
+    display:flex; align-items:center; justify-content:center; padding:28px 14px;
+    overflow-x:hidden;
+  }
+  .petal { position:fixed; pointer-events:none; opacity:.45; font-size:22px; animation: float 9s ease-in-out infinite; }
+  .p1{top:8%;left:8%}.p2{top:17%;right:9%;animation-delay:2s}.p3{bottom:10%;left:12%;animation-delay:4s}.p4{bottom:15%;right:8%;animation-delay:1s}
+  @keyframes float { 50%{transform:translateY(-18px) rotate(12deg)} }
+  .wrap { width:min(100%,650px); }
+  .top { text-align:center; margin-bottom:16px; }
+  .eyebrow { color:#bd7894; letter-spacing:3px; font-size:11px; text-transform:uppercase; }
+  h1 { font-family:Georgia,serif; font-weight:normal; font-size:clamp(30px,7vw,46px); margin:8px 0; color:#bd6489; }
+  .subtitle { font-size:14px; color:#a87589; }
+  .card {
+    background:rgba(255,255,255,.84); border:1px solid #f8c8d9; border-radius:26px;
+    padding:clamp(20px,5vw,38px); box-shadow:0 18px 55px rgba(194,105,141,.15);
+    position:relative; overflow:hidden;
+  }
+  .lilies { text-align:center; font-size:35px; letter-spacing:8px; margin:0 0 14px; }
+  .intro { text-align:center; line-height:1.8; color:#98677d; }
+  .envelope {
+    display:block; margin:24px auto 8px; border:0; border-radius:999px;
+    padding:14px 25px; color:white; background:linear-gradient(135deg,#e98db0,#c96791);
+    font-size:15px; cursor:pointer; box-shadow:0 8px 18px #e9a9c2;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .envelope:hover { transform:translateY(-2px); box-shadow:0 11px 22px #e9a9c2; }
+  .letter { display:none; margin-top:25px; border-top:1px dashed #efb6cb; padding-top:24px; }
+  .letter.show { display:block; animation:appear .7s ease both; }
+  @keyframes appear { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
+  .letter p { line-height:1.9; font-size:15px; white-space:normal; margin:0 0 16px; }
+  .salute { color:#c56891; font-family:Georgia,serif; font-size:23px!important; }
+  .music {
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    margin-top:24px; padding:13px 15px; border-radius:17px; background:#fff1f6;
+    border:1px solid #f7d3e0;
+  }
+  .track { min-width:0; }
+  .track strong { display:block; font-size:13px; color:#a9547a; }
+  .track small { color:#b58398; font-size:11px; }
+  .music button, .read-btn {
+    border:0; border-radius:999px; padding:10px 15px; background:#e99ab8;
+    color:white; cursor:pointer; font-size:13px; white-space:nowrap;
+  }
+  .end { text-align:center; margin-top:24px; }
+  .end button { border:1px solid #edb4ca; background:#fff8fb; color:#bd6489; border-radius:999px; padding:11px 18px; cursor:pointer; }
+  .tiny { text-align:center; color:#c18da3; font-size:11px; margin-top:18px; }
+  .heart { color:#df80a5; }
+  @media (max-width:420px) { .music{align-items:flex-start}.music button{padding:9px 12px} }
+</style>
+</head>
+<body>
+  <span class="petal p1">🌸</span><span class="petal p2">✿</span>
+  <span class="petal p3">🌷</span><span class="petal p4">✿</span>
+  <main class="wrap">
+    <header class="top">
+      <div class="eyebrow">a little note from a secret admirer</div>
+      <h1>For you, Rev ♡</h1>
+      <div class="subtitle">a tiny pink corner, made with a little courage</div>
+    </header>
+
+    <section class="card">
+      <div class="lilies">𓍢ִ໋🌷͙֒　𓍢ִ໋🌷͙֒</div>
+      <p class="intro">Some words are easier to write than to say.<br>So… I made you this little page.</p>
+      <button class="envelope" id="openBtn">Open my letter 💌</button>
+
+      <article class="letter" id="letter">
+        <p class="salute">Halo, Rev..</p>
+        <p>I hope you read this notes.</p>
+        <p>
+          Wkwk dulu kita asik banget yaa. Ku ngerasa waktu itu seneng bgt punya tmn kaya km, Rep.
+          Makin lama ntah knpa aku baper sama km. Like, km sering like notes IG laguku dll.
+          I know this freakin' shi mungkin karna aku kurang perhatian dari lawan jenis jadinya aku begitu.
+        </p>
+        <p>
+          Did you know, u are my first female friend at school. Jadi aku ngerasa excited bgt
+          Mabar, chatan, dll. Dan kenapa sikap aku ke km di RL kek org gakenal ya?
+          Karena lu org populer jir di sekolah. Masa org kayak lu temenan nya ama gw yang
+          pecundang kek gini. Gw ngerasa bakal jadi aib elu, so that's why aku pura-pura gakenal.
+        </p>
+        <p>
+          Btw, km ilfeel ya aku? Kenapa, kalo boleh tau? Aku pengen jadi org yg km mau, Rep.
+          I follow your interesting, hehe. Jujur aja aku selalu ngikutin hal yg km suka.
+          Kayak km kan suka Marvel, trus aku ngikutin deh. Pls tell me, I want to be ur fav boy.
+        </p>
+        <p>
+          I know this is crazy. Aku udah lama jadi pengagum rahasia km.
+          Walau kita ga chatan, aku tetep fall in love with you… idk why.
+          U know kan, menyukai berarti ga harus memiliki, hehe.
+        </p>
+        <p>
+          I like you, and I'm falling in love with you. Love you 3000x
+          <span class="heart">💗</span>
+        </p>
+        <div class="end">
+          <button id="readBtn">I’ve read your little secret ♡</button>
+        </div>
+      </article>
+
+      <div class="music" id="musicBox" hidden>
+        <div class="track">
+          <strong>♪ Scott Street</strong>
+          <small>Phoebe Bridgers · your little soundtrack</small>
+        </div>
+        <button id="musicBtn">Pause ♫</button>
+      </div>
+      <audio id="song" src="song.mp3" preload="auto" loop></audio>
+      <div class="tiny">made with lilies, soft pink, and a little courage ♡</div>
+    </section>
+  </main>
+
+<script>
+  const openBtn = document.getElementById('openBtn');
+  const letter = document.getElementById('letter');
+  const song = document.getElementById('song');
+  const musicBox = document.getElementById('musicBox');
+  const musicBtn = document.getElementById('musicBtn');
+
+  openBtn.addEventListener('click', async () => {
+    letter.classList.add('show');
+    openBtn.textContent = 'Your letter is open ♡';
+    openBtn.disabled = true;
+    musicBox.hidden = false;
+    try {
+      await song.play();
+      musicBtn.textContent = 'Pause ♫';
+    } catch (e) {
+      musicBtn.textContent = 'Play ♫';
+    }
+  });
+
+  musicBtn.addEventListener('click', async () => {
+    if (song.paused) {
+      try { await song.play(); musicBtn.textContent = 'Pause ♫'; }
+      catch (e) { musicBtn.textContent = 'Play ♫'; }
+    } else {
+      song.pause();
+      musicBtn.textContent = 'Play ♫';
+    }
+  });
+
+  document.getElementById('readBtn').addEventListener('click', () => {
+    const btn = document.getElementById('readBtn');
+    btn.textContent = 'Thank you for reading 💗';
+  });
+</script>
+</body>
+</html>
